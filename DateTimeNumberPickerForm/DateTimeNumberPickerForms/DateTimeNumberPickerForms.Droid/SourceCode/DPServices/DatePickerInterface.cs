@@ -49,7 +49,6 @@ namespace DateTimeNumberPickerForms.Droid.SourceCode.DPServices
         {
             _onNumChangedCallback = actionNumChangedCallback;
             var numDialog = new NumberPickerDialogFragment(CrossCurrentActivity.Current.Activity, minNum, maxNum, currentNum, message, this);
-            numDialog.Dialog.SetCanceledOnTouchOutside(false);
             numDialog.Show(CrossCurrentActivity.Current.Activity.FragmentManager, message);
         }
         
