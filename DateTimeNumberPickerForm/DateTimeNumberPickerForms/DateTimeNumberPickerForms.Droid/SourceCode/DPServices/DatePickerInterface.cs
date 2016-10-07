@@ -42,7 +42,6 @@ namespace DateTimeNumberPickerForms.Droid.SourceCode.DPServices
             _onDateTimeChangedCallback = onDateTimeChangedCallback;
             var c = CrossCurrentActivity.Current.Activity;
             var dialog = new TimePickerDialog(c, TimeChangeCallBack, currentDateTime.Hour, currentDateTime.Minute, true);
-            dialog.SetCanceledOnTouchOutside(false);
             dialog.Show();
         }
 
