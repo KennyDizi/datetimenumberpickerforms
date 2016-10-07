@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BindingContext="{Binding Source={StaticResource ViewModelLocator},
                                       Path=PickerPageViewModel}">
-    <StackLayout VerticalOptions="StartAndExpand">
+    <StackLayout VerticalOptions="CenterAndExpand">
         <Label Text="{Binding SelectedDate}" TextColor="Red" />
         <Button Command="{Binding ShowDatePikcerCommand}"
                 Text="Show DatePicker"

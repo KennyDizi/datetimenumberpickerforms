@@ -37,7 +37,7 @@ namespace DateTimeNumberPickerForms.SourceCode
         {
             CrossXDateTimeNumberPicker.Current.ShowTimePicker("Choose a time", DateTime.Now, seletedTime =>
             {
-                SelectedDate = $"Time selected is: {seletedTime.Hour}:{seletedTime.Minute}";
+                SelectedTime = $"Time selected is: {seletedTime.Hour}:{seletedTime.Minute}";
             });
         }
 

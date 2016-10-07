@@ -29,8 +29,7 @@ namespace DateTimeNumberPickerForms.iOS.SourceCode.DPServices
                     MaximumDate = DateTimeToNsDate(maxdate),
                     MinimumDate = DateTimeToNsDate(mindate),
                     Date = DateTimeToNsDate(currentDateTime),
-                    TimeZone = new NSTimeZone("UTC"),
-                    Locale = NSLocale.FromLocaleIdentifier("NL")
+                    TimeZone = new NSTimeZone("UTC")
                 }
             };
 
