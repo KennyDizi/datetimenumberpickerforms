@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="dialog_ok">OK</string>
+  <string name="dialog_cancel">Cancel</string>
+  <string name="multi_dialog_cancel">I like shrubberies better</string>
+  <string name="dialog_date">Pick date</string>
+  <string name="dialog_number">Pick number</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+</resources>

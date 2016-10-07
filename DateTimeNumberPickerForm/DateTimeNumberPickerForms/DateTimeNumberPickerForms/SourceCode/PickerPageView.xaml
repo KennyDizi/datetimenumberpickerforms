@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="DateTimeNumberPickerForms.SourceCode.PickerPageView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator},
+                                      Path=PickerPageViewModel}">
+    <StackLayout VerticalOptions="StartAndExpand">
+        <Label Text="{Binding SelectedDate}" TextColor="Red" />
+        <Button Command="{Binding ShowDatePikcerCommand}"
+                Text="Show DatePicker"
+                TextColor="Gray" />
+
+        <Label Text="{Binding SelectedTime}" TextColor="Red" />
+        <Button Command="{Binding ShowTimePickerCommand}"
+                Text="Show TimePicker"
+                TextColor="Gray" />
+
+        <Label Text="{Binding SelectedNumber}" TextColor="Red" />
+        <Button Command="{Binding ShowNumberPickerCommand}"
+                Text="Show ShowNumberPicker"
+                TextColor="Gray" />
+    </StackLayout>
+</ContentPage>
