@@ -5,17 +5,23 @@
              BindingContext="{Binding Source={StaticResource ViewModelLocator},
                                       Path=PickerPageViewModel}">
     <StackLayout VerticalOptions="CenterAndExpand">
-        <Label Text="{Binding SelectedDate}" TextColor="Red" />
+        <Label HorizontalTextAlignment="Center"
+               Text="{Binding SelectedDate}"
+               TextColor="Red" />
         <Button Command="{Binding ShowDatePikcerCommand}"
                 Text="Show DatePicker"
                 TextColor="Gray" />
 
-        <Label Text="{Binding SelectedTime}" TextColor="Red" />
+        <Label HorizontalTextAlignment="Center"
+               Text="{Binding SelectedTime}"
+               TextColor="Red" />
         <Button Command="{Binding ShowTimePickerCommand}"
                 Text="Show TimePicker"
                 TextColor="Gray" />
 
-        <Label Text="{Binding SelectedNumber}" TextColor="Red" />
+        <Label HorizontalTextAlignment="Center"
+               Text="{Binding SelectedNumber}"
+               TextColor="Red" />
         <Button Command="{Binding ShowNumberPickerCommand}"
                 Text="Show ShowNumberPicker"
                 TextColor="Gray" />
