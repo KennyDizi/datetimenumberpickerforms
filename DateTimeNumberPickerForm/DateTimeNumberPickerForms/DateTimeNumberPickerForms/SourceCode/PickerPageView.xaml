@@ -4,22 +4,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BindingContext="{Binding Source={StaticResource ViewModelLocator},
                                       Path=PickerPageViewModel}">
-    <StackLayout VerticalOptions="CenterAndExpand">
-        <Label HorizontalTextAlignment="Center"
+    <StackLayout Margin="0,100,0,0"
+                 Spacing="20"
+                 VerticalOptions="CenterAndExpand">
+        <Label x:Name="LabelDate"
+               HorizontalTextAlignment="Center"
                Text="{Binding SelectedDate}"
                TextColor="Red" />
         <Button Command="{Binding ShowDatePikcerCommand}"
                 Text="Show DatePicker"
                 TextColor="Gray" />
 
-        <Label HorizontalTextAlignment="Center"
+        <Label x:Name="LabelTime"
+               HorizontalTextAlignment="Center"
                Text="{Binding SelectedTime}"
                TextColor="Red" />
         <Button Command="{Binding ShowTimePickerCommand}"
                 Text="Show TimePicker"
                 TextColor="Gray" />
 
-        <Label HorizontalTextAlignment="Center"
+        <Label x:Name="LabelNumber"
+               HorizontalTextAlignment="Center"
                Text="{Binding SelectedNumber}"
                TextColor="Red" />
         <Button Command="{Binding ShowNumberPickerCommand}"
